@@ -1,0 +1,15 @@
+{
+  "name": "irfanjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Addition.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "irfan <irfankaleli@yandex.com>",
+  "license": "ISC"
+}
