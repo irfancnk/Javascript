@@ -65,9 +65,45 @@ var counter = function(arr){
   // array.length gives element num.
 };
 
+var adder = function(a,b){
+  return `The sum is ${a+b}`;
+};
+
+var pi = 3.142;
+module.exports = counter; // Makes counter accessible
+
+
 // require = Include another _.js file
 
-require('./count');
+var counter = require('./count');
 console.log(counter([1,2,3,4]));
+
+// OR
+
+module.exports.counter = counter; // Makes counter accessible
+module.exports.adder = adder;
+module.exports.pi = pi;
+
+var stuff = require('./count');
+console.log(stuff.counter([1,2,3,4]));
+console.log(stuff.adder(count.pi,5));
+
+// Look to Lesson 7 from the link below in case of errors
+// https://www.youtube.com/watch?v=9UaZtgB5tQI
+
+// -----------------------------------------------------------------------------
+
+// These 2 code parts are exactly the same :
+
+var counter = function(arr){
+  return 'There are ' + arr.length + ' elements';
+};
+module.exports.counter = counter;
+
+// AND
+
+module.exports.counter = function(arr){
+  return 'There are ' + arr.length + ' elements';
+};
 
 // -----------------------------------------------------------------------------
