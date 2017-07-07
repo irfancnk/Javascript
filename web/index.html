@@ -7,60 +7,11 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <style>
-        .button 
-        {
-            display: inline-block;
-            padding: 15px 20px;
-            font-size: 24px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            outline: none;
-            color: #fff;
-            background-color: #00aeff;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #999;
-        }
-        .button:hover {background-color: #007fba}
-        .button:active 
-        {
-            background-color: #007fba;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-    </style>
     <h1>Onbiron</h1>
-    <img src="images/off.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+    <img src="images/off.png" >
     <center><button class="button"><div id="onButton"><span>On </span></div></button></center>
-    <script>
-        var on = document.getElementById("onButton");
-        var bulb = document.querySelector('img');
-        on.onclick = function()
-        {
-            var source = bulb.getAttribute('src');
-            if(source === 'images/off.png')
-            {
-                bulb.setAttribute ('src','images/on.png');
-            }
-        }
-    </script>
     <br>
     <center><button class="button"><div id="offButton"><span>Off </span></button></div></center>
-    <script>
-        var off = document.getElementById("offButton");
-        var bulb = document.querySelector('img');
-        off.onclick = function()
-        {
-            var source = bulb.getAttribute('src');
-            if(source === 'images/on.png')
-            {
-                bulb.setAttribute ('src','images/off.png');
-            }
-        }
-    </script>
-
 
     <p>Onbiron provides IoT middleware solutions based on open standards, that can be easily integrated with mobile and cloud backends. </p>
     
@@ -70,17 +21,25 @@
       <li>IoT</li>
     </ul>
 
-    <p>Contact us <a href="http://www.onbiron.com.tr/">Onbiron Website</a>.</p>
+    <p>Contact us :<a href="http://www.onbiron.com.tr/">Onbiron Website</a>.</p>
 
-    <h2>Number guessing game</h2>
-    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
-    <div class="form"> <label for="guessField"><h3>Enter a guess: </h3></label><input type="text" id="guessField" class="guessField"> <input type="submit" value="Submit guess" class="guessSubmit"> </div>
-    <div class="resultParas">
-        <p class="guesses"></p>
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
-    </div>
+    <b>Your Name:</b>
+    <form action="/action_page_post.php" method="post">
+    <input type="text" name="fname" required>
+    </form>
+    <b>E-mail</b>
+    <form action="Ty.txt" method="post">
+    <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+    </form>
 
+
+    <div align="right"><p id="date"></p></div>
+    <script>
+        document.getElementById("date").innerHTML = Date();
+    </script>
+
+    <script src="scripts/main.js"></script>
 
 
     
