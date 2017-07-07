@@ -5,19 +5,19 @@ var myImage = document.querySelector('img');
 myImage.onclick = function()
 {
     var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/firefox-icon.png')
+    if(mySrc === 'images/off.png')
     {
-        myImage.setAttribute ('src','images/firefox2.png');
+        myImage.setAttribute ('src','images/on.png');
     }
     else
     {
-        myImage.setAttribute ('src','images/firefox-icon.png');
+        myImage.setAttribute ('src','images/off.png');
     }
 }
 
 
 // Button adjustments
-
+/*
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
@@ -38,8 +38,8 @@ function setUserName()
 myButton.onclick = function(){
   setUserName();
 }
-
-
+*/
+/*
 // -----------------------------------------------------------------------------
 // ---------------------------- Finding number game ----------------------------
 // -----------------------------------------------------------------------------
@@ -125,3 +125,4 @@ function resetGame()
 // -----------------------------------------------------------------------------
 // ------------------------- Finding number game over --------------------------
 // -----------------------------------------------------------------------------
+*/

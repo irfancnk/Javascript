@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+    .button {
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #f4511e;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .button:hover span {
+          padding-right: 25px;
+        }
+
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+    }
+    </style>
     <meta charset="utf-8">
     <title>Test Page</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Onbiron is the best</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
-    
+    <h1>Onbiron</h1>
+    <img src="images/off.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+    <center><button class="button"><div id="onButton"><span>On </span></div></button></center>
+    <script>
+        var on = document.getElementById("onButton");
+        var bulb = document.querySelector('img');
+        on.onclick = function()
+        {
+            var source = bulb.getAttribute('src');
+            if(source === 'images/off.png')
+            {
+                bulb.setAttribute ('src','images/on.png');
+            }
+        }
+    </script>
+    <center><button class="button"><div id="offButton"><span>Off </span></button></div></center>
+    <script>
+        var off = document.getElementById("offButton");
+        var bulb = document.querySelector('img');
+        off.onclick = function()
+        {
+            var source = bulb.getAttribute('src');
+            if(source === 'images/on.png')
+            {
+                bulb.setAttribute ('src','images/off.png');
+            }
+        }
+    </script>
 
 
-    <p>At Mozilla, we’re a global community of</p>
+    <p>Onbiron provides IoT middleware solutions based on open standards, that can be easily integrated with mobile and cloud backends. </p>
     
     <ul> 
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
+      <li>Mobile</li>
+      <li>Cloud</li>
+      <li>IoT</li>
     </ul>
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web.</p>
-
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>.</p>
-
-    <center><button>Change user</button></center>
+    <p>Contact us <a href="http://www.onbiron.com.tr/">Onbiron Website</a>.</p>
 
     <h2>Number guessing game</h2>
     <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
@@ -37,7 +100,7 @@
 
 
 
-    <script src="scripts/main.js"></script>
+    
     
 
   </body>
