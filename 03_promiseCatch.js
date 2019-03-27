@@ -8,9 +8,9 @@
 // value - for example obj.catch(() => {}).
 
 var promise1 = new Promise(function(resolve, reject) {
-  throw 'Oh crap!';
+	throw 'Oh crap!';
 });
 
 promise1.catch(function(error) {
-  console.log(error);
+	console.log(error);
 });
