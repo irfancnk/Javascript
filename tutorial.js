@@ -1,11 +1,14 @@
 var util = require('util');
+// console.log(util.inspect(Promise));
 
 // JAVASCRIPT TUTORIAL
 
+
 // DIFFERENCE BETWEEN var and let
-
-// console.log(util.inspect(Promise));
-
+// The difference is scoping.
+// var is scoped to the nearest function block.
+// let is scoped to the nearest enclosing block.
+// Both are global if outside any block.
 function varLetDifference() {
 	if (true) {
 		var varNum = 0;
