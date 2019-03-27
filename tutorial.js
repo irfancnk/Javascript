@@ -21,8 +21,10 @@ function varLetDifference() {
 		console.log("letNum is not defined");
 	}
 }
-varLetDifference();
+// varLetDifference();
 
+
+// JAVASCRIPT PROMISE OBJECT
 
 
 // var promise1 = Promise.resolve(3);
