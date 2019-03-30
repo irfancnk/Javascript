@@ -24,6 +24,7 @@ var server = app.listen(5555);
 var promise1 = Promise.resolve(1);
 var promise2 = 2;
 var promise3 = new Promise(function(resolve, reject) {
+	// Added timeout to simulate a filereading operation etc.
 	setTimeout(resolve, 500, 3);
 });
 var promise4 = axios.get(GET_REMOTE_URL);
