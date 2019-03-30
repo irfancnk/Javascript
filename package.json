@@ -1,0 +1,26 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Complete JS Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfancnk/Javascript.git"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "irfan <irfankaleli@yandex.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irfancnk/Javascript/issues"
+  },
+  "homepage": "https://github.com/irfancnk/Javascript#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
+}

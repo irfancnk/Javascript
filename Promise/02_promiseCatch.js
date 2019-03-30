@@ -12,5 +12,32 @@ var promise1 = new Promise(function(resolve, reject) {
 });
 
 promise1.catch(function(error) {
-	console.log(error);
+	console.log("Error Occured : " + error);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
