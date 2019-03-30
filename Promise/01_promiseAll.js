@@ -6,7 +6,7 @@
 
 
 const axios = require('axios');
-const express = require('express')
+const express = require('express');
 
 var GET_REMOTE_URL = "https://www.facebook.com/";
 var GET_LOCAL_URL = "http://localhost:5555/";
