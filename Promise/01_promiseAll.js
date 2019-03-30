@@ -37,3 +37,6 @@ Promise.all(allPromises).then(function(values) {
 	console.log(values);
 	server.close();
 });
+
+
+// END
