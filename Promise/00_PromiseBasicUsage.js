@@ -21,10 +21,16 @@ function delay(t) {
 
 function delatWithResult(t) {
     return new Promise(function(resolve) {
-        return setTimeout(function() {
-            resolve("Oh nice")
-        },t);
+        setTimeout(resolve, t, "Value");
     });
+
+    // OR
+    // return new Promise(function(resolve) {
+    //     return setTimeout(function() {
+    //         resolve("Oh nice")
+    //     },t);
+    // });
+
 }
 
 
@@ -51,3 +57,5 @@ delatWithResult(2000).then(function(response) {
 // BASIC DELAYED OPERATION WITH THEN AND CATCH CHAIN
 delayWithReject(3000, true).then(sayCrap);
 delayWithReject(4000, false).then(sayCrap).catch(sayShit);
+
+// END
