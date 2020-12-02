@@ -16,3 +16,11 @@ try {
 
 // Just because a variable is declared with const doesn’t mean it’s immutable,
 // all it means is the value can’t be re-assigned.
+
+
+let notAssignedLet;
+const notAssignedConst; // SyntaxError
+
+
+// Another difference between the let and const is that, const variable must
+// be initialized upon the declaration unlike let.
