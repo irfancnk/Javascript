@@ -1,8 +1,3 @@
-var util = require('util');
-// console.log(util.inspect(Promise));
-
-// JAVASCRIPT TUTORIAL
-
 // ===================================== 0 =====================================
 // DIFFERENCE BETWEEN var and let
 // The difference is scoping.
