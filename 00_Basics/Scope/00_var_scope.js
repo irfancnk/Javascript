@@ -1,16 +1,15 @@
 function applyDiscount(prices, percentage) {
-  var discounted = [];
-  for (var i = 0; i < prices.length; i++) {
-    var discountedPrice = prices[i] * (1 - percentage);
-    var finalPrice = Math.round(discountedPrice * 100) / 100;
-    discounted.push(finalPrice);
-  }
-
-  console.log(i); // 3
-  console.log(discountedPrice); // 150
-  console.log(finalPrice); // 150
-
-  return discounted;
+    console.log(discounted);
+    var discounted = [];
+    for (var i = 0; i < prices.length; i++) {
+        var discountedPrice = prices[i] * (1 - percentage);
+        var finalPrice = Math.round(discountedPrice * 100) / 100;
+        discounted.push(finalPrice);
+    }
+    console.log(i); // 3
+    console.log(discountedPrice); // 150
+    console.log(finalPrice); // 150
+    return discounted;
 }
 
 
@@ -37,10 +36,12 @@ function applyDiscountIdentical(prices, percentage) {
 }
 
 applyDiscount([100, 150, 200], 0.2);
-applyDiscountIdentical([100, 150, 200], 0.2);
+// applyDiscountIdentical([100, 150, 200], 0.2);
 
 // applyDiscount and applyDiscountIdentical functions are actually identical.
 // In JavaScript, variables are initialized with the value of undefined when
 // they are created. That is called "Hoisting" which will be covered in more
 // detail later. The JavaScript interpreter will assign variable declarations
 // a default value of undefined during what’s called the "Creation" phase.
+// Because of the hoisting, we can see that even after the declaration of
+// discounted we can print its value as undefined.
