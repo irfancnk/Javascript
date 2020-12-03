@@ -1,7 +1,7 @@
 const user = {
-    name: 'Tyler McGinnis',
-    handle: '@tylermcginnis',
-    location: 'Eden, Utah'
+    name: 'Irfan Kaleli',
+    handle: '@irfancnk',
+    location: 'Ankara, Turkey'
 };
 
 // What we used to do to extract data from an object in following:

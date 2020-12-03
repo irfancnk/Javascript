@@ -1,9 +1,9 @@
 let userFirstName = 'Irfan';
 const userCode = 'irfan';
 
-userFirstName = 'Tyler McGinnis';
+userFirstName = 'Irfan Can';
 try {
-    userCode = '@tylermcginnis';
+    userCode = '@irfancnk';
 } catch (e) {
     // TypeError: Assignment to constant variable.
 }

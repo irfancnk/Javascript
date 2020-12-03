@@ -1,14 +1,14 @@
 // CODE BLOCK #1
 const user1 = {};
-user1.name = 'Tyler McGinnis';
-user1.handle = '@tylermcginnis';
-user1.location = 'Eden, Utah';
+user1.name = 'Irfan Can';
+user1.handle = '@irfancnk';
+user1.location = 'Ankara, Turkey';
 
 // CODE BLOCK #2
 const user2 = {
-    name: 'Tyler McGinnis',
-    handle: '@tylermcginnis',
-    location: 'Eden, Utah'
+    name: 'Irfan Can',
+    handle: '@irfancnk',
+    location: 'Ankara, Turkey'
 };
 
 console.log(user1);
