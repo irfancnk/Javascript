@@ -19,4 +19,5 @@ foo();
 bar();
 
 // For error handling, it seems like throwing a ReferenceError would be a better
-// default than returning undefined.
+// default than returning undefined. The variable x is hoisted since its defined
+// using var, however y variable is not hoisted.
