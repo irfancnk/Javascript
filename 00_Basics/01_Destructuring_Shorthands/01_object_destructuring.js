@@ -10,6 +10,6 @@ const handle1 = user.handle;
 const location1 = user.location;
 
 // can now look like this.
-const { name2, handle2, location2 } = user;
+const { name, handle, location } = user;
 
 // This syntax is called object destructuring
