@@ -41,10 +41,10 @@ function getTweets (uid) {
 
 // If our function has a concise body (one liner), we can omit the return
 // keyword in arrow function and the value will be returned automatically
-// or a more fancy saying implicitly.
+// or a more fancy saying, "implicitly".
 // Another thing is that, if the arrow function only has one parameter, we can
 // omit the () around it.
-// So by using "implicit returns" with arrow functions, we can write the
+// So by using "implicit returns" with arrow functions, we can rewrite the
 // function above like this:
 
 

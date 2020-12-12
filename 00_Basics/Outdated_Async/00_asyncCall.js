@@ -4,9 +4,13 @@
 
 
 console.log("1");
-setTimeout(function(){console.log("2");},0);
+setTimeout( function() {
+    console.log("2");
+}, 0);
 console.log("3");
-setTimeout(function(){console.log("4");},1000);
+setTimeout( function() {
+    console.log("4");
+}, 1);
 // When the timeout is 0, then the output of the code will be,
 // 1 3 2 4
 // ADD EXECUTION TO EVENTLOOP

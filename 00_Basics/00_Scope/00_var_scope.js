@@ -43,5 +43,5 @@ applyDiscount([100, 150, 200], 0.2);
 // they are created. That is called "Hoisting" which will be covered in more
 // detail later. The JavaScript interpreter will assign variable declarations
 // a default value of undefined during what’s called the "Creation" phase.
-// Because of the hoisting, we can see that even after the declaration of
+// Because of the hoisting, we can see that even before the declaration of
 // discounted we can print its value as undefined.
