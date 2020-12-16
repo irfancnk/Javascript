@@ -2,11 +2,11 @@ const parent = {
     name: 'Irfan',
     age: 35,
     nation: 'Turkish'
-}
+};
 
-const child = Object.create(parent)
-child.name = 'Can'
-child.age = 7
+const child = Object.create(parent);
+child.name = 'Can';
+child.age = 7;
 
 
 console.log(child); // { name: 'Can', age: 7 }
@@ -49,7 +49,7 @@ console.log(snoop);
 
 
 // So far, so good. There are still some improvements we can make though. It
-// seems just a tad “hacky” to have to manage a separate object (animalMethods)
+// seems just a tad "hacky" to have to manage a separate object (animalMethods)
 // in order to share methods across instances. That seems like a common feature
 // that we'd want to be implemented into the language itself. Turns out it is
-// and it’s the whole reason we are here - prototype...
+// and it’s the whole reason we are here - PROTOTYPE!!!!!!!!!!!
